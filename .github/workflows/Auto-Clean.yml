@@ -1,21 +1,16 @@
 name: Auto-Clean
 
 on:
-  #自动清理：每天早上8点
+  #自动清理：每天早上7点
   #schedule:
-  #  - cron: 0 0 * * *
+  #  - cron: 0 23 * * *
   #手动清理
   workflow_dispatch:
-    inputs:
-      NUMBER:
-        default: '8'
-        required: false
-        type: string
+
+permissions: write-all
 
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-permissions: write-all
 
 jobs:
   auto_clean:
@@ -24,11 +19,11 @@ jobs:
       - name: Delete Old Releases
         uses: dev-drprasad/delete-older-releases@master
         with:
-          keep_latest: ${{inputs.NUMBER || '8'}}
+          keep_latest: 3
           delete_tags: true
 
       - name: Delete Old Workflows
         uses: Mattraks/delete-workflow-runs@main
         with:
           retain_days: 0
-          keep_minimum_runs: 1
+          keep_minimum_runs: 3
