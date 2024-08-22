@@ -68,7 +68,7 @@ UPDATE_PACKAGE "luci-app-poweroff" "esirplayground/luci-app-poweroff" "master"
 #git clone --depth=1 --single-branch https://github.com/esirplayground/luci-app-poweroff
 
 #OpenAppFilter
-UPDATE_PACKAGE "OpenAppFilter" "destan19/OpenAppFilter" "master"
+#UPDATE_PACKAGE "OpenAppFilter" "destan19/OpenAppFilter" "master"
 #git clone --depth=1 --single-branch https://github.com/destan19/OpenAppFilter
 
 #Fileassistant
