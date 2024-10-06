@@ -31,7 +31,7 @@ UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "luci-smartdns-dev"
 #UPDATE_PACKAGE "passwall2" "xiaorouji/openwrt-passwall2" "main"
 UPDATE_PACKAGE "passwall-packages" "xiaorouji/openwrt-passwall-packages" "main"
 UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev"
-UPDATE_PACKAGE "ssr-plus" "fw876/helloworld" "master"
+UPDATE_PACKAGE "helloworld" "fw876/helloworld" "master"
 #rm -rf $(find ../feeds/ -type d -iname "*helloworld*" -prune)
 
 if [[ $WRT_URL == *"immortalwrt"* ]]; then
@@ -74,6 +74,12 @@ UPDATE_PACKAGE "luci-app-poweroff" "esirplayground/luci-app-poweroff" "master"
 #Fileassistant
 UPDATE_PACKAGE "luci-app-fileassistant" "kenzok78/luci-app-fileassistant" "main"
 #git clone --depth=1 --single-branch https://github.com/kenzok78/luci-app-fileassistant
+
+#ddns-go
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+
+#luci-app-wizard
+git clone https://github.com/sirpdboy/luci-app-wizard package/luci-app-wizard
 
 #更新软件包版本
 UPDATE_VERSION() {

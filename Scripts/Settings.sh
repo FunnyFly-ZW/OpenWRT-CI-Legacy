@@ -46,7 +46,6 @@ if [[ $WRT_URL == *"lede"* ]]; then
 	echo "CONFIG_PACKAGE_luci-app-passwall=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_Iptables_Transparent_Proxy=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_Nftables_Transparent_Proxy=y" >> ./.config
-#	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Brook=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Haproxy=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Hysteria=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_NaiveProxy=y" >> ./.config
@@ -58,10 +57,8 @@ if [[ $WRT_URL == *"lede"* ]]; then
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ShadowsocksR_Libev_Server=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Simple_Obfs=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_SingBox=y" >> ./.config
-#	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_GO=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Trojan_Plus=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_tuic_client=y" >> ./.config
-#	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_IPT2Socks=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Geodata=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_V2ray_Plugin=y" >> ./.config
 	echo "CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Xray=y" >> ./.config
