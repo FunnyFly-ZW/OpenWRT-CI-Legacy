@@ -85,15 +85,15 @@ jobs:
           sudo -E systemctl daemon-reload
           sudo -E timedatectl set-timezone "Asia/Shanghai"
 
-      - name: Check gcc, g++, clang and clang++ versions
+      - name: Check Compiler Versions
         run: |
-          echo "Checking GCC version:"
+          echo "===== Checking GCC version ====="
           gcc -v
-          echo "Checking G++ version:"
+          echo "===== Checking G++ version ====="
           g++ -v
-          echo "Checking Clang version:"
+          echo "===== Checking Clang version ====="
           clang -v
-          echo "Checking Clang++ version:"
+          echo "===== Checking Clang++ version ====="
           clang++ -v
             
       - name: Initialization Values
