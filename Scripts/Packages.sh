@@ -31,8 +31,8 @@ UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "luci-smartdns-dev"
 #UPDATE_PACKAGE "passwall2" "xiaorouji/openwrt-passwall2" "main"
 UPDATE_PACKAGE "passwall-packages" "xiaorouji/openwrt-passwall-packages" "main"
 UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev"
-UPDATE_PACKAGE "helloworld" "fw876/helloworld" "master"
-#rm -rf $(find ../feeds/ -type d -iname "*helloworld*" -prune)
+#PDATE_PACKAGE "helloworld" "fw876/helloworld" "master"
+rm -rf $(find ../feeds/ -type d -iname "*helloworld*" -prune)
 
 if [[ $WRT_URL == *"immortalwrt"* ]]; then
 	UPDATE_PACKAGE "homeproxy" "immortalwrt/homeproxy" "dev"
